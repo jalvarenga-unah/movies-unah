@@ -1,0 +1,81 @@
+
+### Lista de peliculas
+
+GET http://localhost:3000/movies
+
+
+### consulta por id de pelicula
+GET http://localhost:3000/movies/5fbb1b6d-5510-11f0-b6f2-1e24d107da40
+
+### consulta por genero
+GET http://localhost:3000/movies/search?genre=Action
+
+
+### Crear una pelicula
+POST http://localhost:3000/movies
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQxMGVkYTMyLTk5ZjEtNDNmNy1iMGJjLTQwYTc5MzdiMmVlMCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1Mjc5NDc3NiwiZXhwIjoxNzUyODM3OTc2fQ.nIZlAu6FZBJpxCaD5oUeg05QY8wikp2L3XilPtqmH1U
+
+{
+    "title": "Inception III",
+    "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "poster_url": "https://m.media-amazon.com/images/I/71uKM+LdgFL._UF894,1000_QL80_.jpg",
+    "genres": [
+        "5fbad254-5510-11f0-b6f2-1e24d107da40"
+    ]
+}
+
+### eliminar una pelicula
+DELETE http://localhost:3000/movies/1749769847012
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQxMGVkYTMyLTk5ZjEtNDNmNy1iMGJjLTQwYTc5MzdiMmVlMCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1Mjc5NDc3NiwiZXhwIjoxNzUyODM3OTc2fQ.nIZlAu6FZBJpxCaD5oUeg05QY8wikp2L3XilPtqmH1U 
+# user: Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFiMDg0YWRiLTJkMjEtNGM1ZC04YTNlLTRjNWFkOTEyNDY2YSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzUyNzk0Njc3LCJleHAiOjE3NTI4Mzc4Nzd9.1BAOumTmXNqLYDyoI9I8lF-y-yLEPyUDKmsJFgOU5VY
+
+### Actualziar una pelicula
+PATCH http://localhost:3000/movies/1749769847012
+Content-Type: application/json
+
+{
+    "title": "Inception III",
+    "decription": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+    "year": 2010,
+    "poster_url": "https://example.com/inception-poster.jpg",
+    "genre": [
+        "Science Fiction",
+        "Thriller"
+    ]
+}
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "user": "juan.alvarenga@ess.hn",
+    "password": "unah1234"
+}
+
+### Registro de usuario
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{ "name":"Juan Alvarenga",
+ "email":"jealvarengar@unah.edu.hn", 
+ "phone": "99999999",
+ "role": "user"
+}
+
+
+### Cambio de contraseña
+
+PATCH http://localhost:3000/auth/set-password
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFiMDg0YWRiLTJkMjEtNGM1ZC04YTNlLTRjNWFkOTEyNDY2YSIsInBhc3N3b3JkIjoiJDJiJDEwJHA3YlFMZkd4a1QyWDdtN1FZRDFlWWU1S2VSRG5wSEhXb1c0czE2RDlFN0hkWDBDZVNjVWtTIiwiaWF0IjoxNzUyNzk0NjQzLCJleHAiOjE3NTI3OTgyNDN9.dC9JbCFBbyjW3hO_b5kc7GiHZH8MHWzo0vgNeWzKlm8
+
+{ 
+ "old_password":"1234",
+ "new_password":"unah1234", 
+ "confirm_password": "unah1234"
+}

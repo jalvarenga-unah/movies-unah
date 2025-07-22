@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Inception",
+    "decription": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "genre": ["Science Fiction", "Thriller"],
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+    "id": 1749769847012
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "decription": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "director": "Frank Darabont",
+    "year": 1994,
+    "genre": ["Drama"],
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg",
+    "id": 1749769847013
+  },
+  {
+    "title": "The Godfather",
+    "decription": "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
+    "director": "Francis Ford Coppola",
+    "year": 1972,
+    "genre": ["Crime", "Drama"],
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "id": 1749769847014
+  }
+]
