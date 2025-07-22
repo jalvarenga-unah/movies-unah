@@ -58,7 +58,7 @@ Content-Type: application/json
 
 ### Registro de usuario
 
-POST http://localhost:3000/auth/register
+POST https://movies-unah.onrender.com/auth/register
 Content-Type: application/json
 
 { "name":"Juan Alvarenga",
